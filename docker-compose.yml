@@ -1,0 +1,12 @@
+version: '3.11'
+
+
+services:
+  bot:
+    build: .
+    restart: always
+    container_name: bot
+    environment:
+      BOT_TOKEN: 7624067473:AAGCmOQRJL9dn1RZdSR-GkAQOQXJVvi6y6o
+    command: python3 main.py
+
